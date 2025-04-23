@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up & Login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .form-box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      .checkbox input {
+        margin-right: 5px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .social-login {
+        margin-top: 20px;
+      }
+
+      .social-login button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .google {
+        background-color: #db4437;
+        color: white;
+      }
+
+      .facebook {
+        background-color: #3b5998;
+        color: white;
+      }
+
+      .link-text {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .link-text a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .link-text a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- LOGIN FORM -->
+    <h1>GREAT RIFT VALLEY MEMBERSHIP FORM</h1>
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="login-email">Email or Username</label>
+          <input type="text" id="login-email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required />
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="keep-logged-in" />
+          <label for="keep-logged-in">Keep me logged in</label>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="link-text">
+          <a href="#">Forgot Password?</a> | <a href="#">Can't login?</a>
+        </div>
+
+        <div class="social-login">
+          <button class="google">Login with Google</button>
+          <button class="facebook">Login with Facebook</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div class="form-box">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="form-group">
+          <label for="signup-name">First Name</label>
+          <input type="text" id="signup-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-surname">Surname</label>
+          <input type="text" id="signup-surname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-company">Company</label>
+          <input type="text" id="signup-company" />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-dob">Date of Birth</label>
+          <input type="date" id="signup-dob" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signup-confirm">Confirm Password</label>
+          <input type="password" id="signup-confirm" required />
+        </div>
+
+        <button type="submit" class="btn">Create Account</button>
+
+        <div class="link-text">
+          Already have an account? <a href="#">Login</a>
+        </div>
+
+        <div class="social-login">
+          <button class="google">Sign Up with Google</button>
+          <button class="facebook">Sign Up with Facebook</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
